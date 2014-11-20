@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E6E9CC9152AA00100ACC702 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CC8152AA00100ACC702 /* UIKit.framework */; };
+		3E6E9CCB152AA00100ACC702 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CCA152AA00100ACC702 /* Foundation.framework */; };
+		3E6E9CCD152AA00100ACC702 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CCC152AA00100ACC702 /* CoreGraphics.framework */; };
+		3E6E9CCF152AA00100ACC702 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CCE152AA00100ACC702 /* CoreData.framework */; };
+		3E6E9CD5152AA00100ACC702 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9CD3152AA00100ACC702 /* InfoPlist.strings */; };
+		3E6E9CD7152AA00100ACC702 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E9CD6152AA00100ACC702 /* main.m */; };
+		3E6E9CDB152AA00100ACC702 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E9CDA152AA00100ACC702 /* AppDelegate.m */; };
+		3E6E9CDE152AA00100ACC702 /* aMagnifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E9CDC152AA00100ACC702 /* aMagnifier.xcdatamodeld */; };
+		3E6E9CE6152AA00100ACC702 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CE5152AA00100ACC702 /* SenTestingKit.framework */; };
+		3E6E9CE7152AA00100ACC702 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CC8152AA00100ACC702 /* UIKit.framework */; };
+		3E6E9CE8152AA00100ACC702 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CCA152AA00100ACC702 /* Foundation.framework */; };
+		3E6E9CE9152AA00100ACC702 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9CCE152AA00100ACC702 /* CoreData.framework */; };
+		3E6E9CF1152AA00100ACC702 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9CEF152AA00100ACC702 /* InfoPlist.strings */; };
+		3E6E9CF4152AA00100ACC702 /* aMagnifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E9CF3152AA00100ACC702 /* aMagnifierTests.m */; };
+		3E6E9D00152AA03300ACC702 /* MagnaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E9CFE152AA03300ACC702 /* MagnaViewController.m */; };
+		3E6E9D01152AA03300ACC702 /* MagnaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9CFF152AA03300ACC702 /* MagnaViewController.xib */; };
+		3E6E9D04152AA39700ACC702 /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E9D03152AA39700ACC702 /* CaptureSessionManager.m */; };
+		3E6E9D06152AA4FD00ACC702 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6E9D05152AA4FD00ACC702 /* AVFoundation.framework */; };
+		3E6E9D0B152AA6E500ACC702 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9D09152AA6E500ACC702 /* minus.png */; };
+		3E6E9D0C152AA6E500ACC702 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9D0A152AA6E500ACC702 /* plus.png */; };
+		3E6E9D12152AAADE00ACC702 /* zoom_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9D11152AAADE00ACC702 /* zoom_in.png */; };
+		3E6E9D14152AAC1400ACC702 /* zoom_out.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9D13152AAC1400ACC702 /* zoom_out.png */; };
+		3E6E9D16152AB50400ACC702 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9D15152AB50400ACC702 /* overlay.png */; };
+		3E6E9D1C152ABA6200ACC702 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9D1B152ABA6200ACC702 /* blue.png */; };
+		3E6E9D1E152ABC4300ACC702 /* blue_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E9D1D152ABC4300ACC702 /* blue_button.png */; };
+		3E7D4814152AC73100A0628C /* amag_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D4813152AC73100A0628C /* amag_57.png */; };
+		3EBC4274152B5C0A002E4C9A /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC4273152B5C0A002E4C9A /* FlipsideViewController.xib */; };
+		3EBC4278152B5C1E002E4C9A /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC4277152B5C1E002E4C9A /* FlipsideViewController.m */; };
+		3EBC427C152B62CC002E4C9A /* overlay-short.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC427B152B62CC002E4C9A /* overlay-short.png */; };
+		3EBC427E152B636C002E4C9A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBC427D152B636C002E4C9A /* iAd.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E6E9CEA152AA00100ACC702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E6E9CBB152AA00100ACC702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E6E9CC3152AA00100ACC702;
+			remoteInfo = aMagnifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E6E9CC4152AA00100ACC702 /* aMagnifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aMagnifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6E9CC8152AA00100ACC702 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3E6E9CCA152AA00100ACC702 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3E6E9CCC152AA00100ACC702 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3E6E9CCE152AA00100ACC702 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3E6E9CD2152AA00100ACC702 /* aMagnifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aMagnifier-Info.plist"; sourceTree = "<group>"; };
+		3E6E9CD4152AA00100ACC702 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E6E9CD6152AA00100ACC702 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E6E9CD8152AA00100ACC702 /* aMagnifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aMagnifier-Prefix.pch"; sourceTree = "<group>"; };
+		3E6E9CD9152AA00100ACC702 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E6E9CDA152AA00100ACC702 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E6E9CDD152AA00100ACC702 /* aMagnifier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = aMagnifier.xcdatamodel; sourceTree = "<group>"; };
+		3E6E9CE4152AA00100ACC702 /* aMagnifierTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aMagnifierTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6E9CE5152AA00100ACC702 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3E6E9CEE152AA00100ACC702 /* aMagnifierTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aMagnifierTests-Info.plist"; sourceTree = "<group>"; };
+		3E6E9CF0152AA00100ACC702 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E6E9CF2152AA00100ACC702 /* aMagnifierTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aMagnifierTests.h; sourceTree = "<group>"; };
+		3E6E9CF3152AA00100ACC702 /* aMagnifierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aMagnifierTests.m; sourceTree = "<group>"; };
+		3E6E9CFD152AA03300ACC702 /* MagnaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnaViewController.h; sourceTree = "<group>"; };
+		3E6E9CFE152AA03300ACC702 /* MagnaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnaViewController.m; sourceTree = "<group>"; };
+		3E6E9CFF152AA03300ACC702 /* MagnaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagnaViewController.xib; sourceTree = "<group>"; };
+		3E6E9D02152AA39700ACC702 /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		3E6E9D03152AA39700ACC702 /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+		3E6E9D05152AA4FD00ACC702 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3E6E9D09152AA6E500ACC702 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		3E6E9D0A152AA6E500ACC702 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		3E6E9D11152AAADE00ACC702 /* zoom_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom_in.png; sourceTree = "<group>"; };
+		3E6E9D13152AAC1400ACC702 /* zoom_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom_out.png; sourceTree = "<group>"; };
+		3E6E9D15152AB50400ACC702 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		3E6E9D1B152ABA6200ACC702 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		3E6E9D1D152ABC4300ACC702 /* blue_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button.png; sourceTree = "<group>"; };
+		3E7D4813152AC73100A0628C /* amag_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amag_57.png; sourceTree = "<group>"; };
+		3EBC4273152B5C0A002E4C9A /* FlipsideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipsideViewController.xib; sourceTree = "<group>"; };
+		3EBC4276152B5C1E002E4C9A /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		3EBC4277152B5C1E002E4C9A /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		3EBC427B152B62CC002E4C9A /* overlay-short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-short.png"; sourceTree = "<group>"; };
+		3EBC427D152B636C002E4C9A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E6E9CC1152AA00100ACC702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBC427E152B636C002E4C9A /* iAd.framework in Frameworks */,
+				3E6E9D06152AA4FD00ACC702 /* AVFoundation.framework in Frameworks */,
+				3E6E9CC9152AA00100ACC702 /* UIKit.framework in Frameworks */,
+				3E6E9CCB152AA00100ACC702 /* Foundation.framework in Frameworks */,
+				3E6E9CCD152AA00100ACC702 /* CoreGraphics.framework in Frameworks */,
+				3E6E9CCF152AA00100ACC702 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6E9CE0152AA00100ACC702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6E9CE6152AA00100ACC702 /* SenTestingKit.framework in Frameworks */,
+				3E6E9CE7152AA00100ACC702 /* UIKit.framework in Frameworks */,
+				3E6E9CE8152AA00100ACC702 /* Foundation.framework in Frameworks */,
+				3E6E9CE9152AA00100ACC702 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E6E9CB9152AA00100ACC702 = {
+			isa = PBXGroup;
+			children = (
+				3EBC427D152B636C002E4C9A /* iAd.framework */,
+				3E7D4813152AC73100A0628C /* amag_57.png */,
+				3E6E9CD0152AA00100ACC702 /* aMagnifier */,
+				3E6E9CEC152AA00100ACC702 /* aMagnifierTests */,
+				3E6E9CC7152AA00100ACC702 /* Frameworks */,
+				3E6E9CC5152AA00100ACC702 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E6E9CC5152AA00100ACC702 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E9CC4152AA00100ACC702 /* aMagnifier.app */,
+				3E6E9CE4152AA00100ACC702 /* aMagnifierTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E6E9CC7152AA00100ACC702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E9D05152AA4FD00ACC702 /* AVFoundation.framework */,
+				3E6E9CC8152AA00100ACC702 /* UIKit.framework */,
+				3E6E9CCA152AA00100ACC702 /* Foundation.framework */,
+				3E6E9CCC152AA00100ACC702 /* CoreGraphics.framework */,
+				3E6E9CCE152AA00100ACC702 /* CoreData.framework */,
+				3E6E9CE5152AA00100ACC702 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E6E9CD0152AA00100ACC702 /* aMagnifier */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC4276152B5C1E002E4C9A /* FlipsideViewController.h */,
+				3EBC4277152B5C1E002E4C9A /* FlipsideViewController.m */,
+				3EBC4273152B5C0A002E4C9A /* FlipsideViewController.xib */,
+				3E6E9D07152AA6CB00ACC702 /* Resources */,
+				3E6E9CD9152AA00100ACC702 /* AppDelegate.h */,
+				3E6E9CDA152AA00100ACC702 /* AppDelegate.m */,
+				3E6E9CDC152AA00100ACC702 /* aMagnifier.xcdatamodeld */,
+				3E6E9CD1152AA00100ACC702 /* Supporting Files */,
+				3E6E9CFD152AA03300ACC702 /* MagnaViewController.h */,
+				3E6E9CFE152AA03300ACC702 /* MagnaViewController.m */,
+				3E6E9CFF152AA03300ACC702 /* MagnaViewController.xib */,
+				3E6E9D02152AA39700ACC702 /* CaptureSessionManager.h */,
+				3E6E9D03152AA39700ACC702 /* CaptureSessionManager.m */,
+			);
+			path = aMagnifier;
+			sourceTree = "<group>";
+		};
+		3E6E9CD1152AA00100ACC702 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E9CD2152AA00100ACC702 /* aMagnifier-Info.plist */,
+				3E6E9CD3152AA00100ACC702 /* InfoPlist.strings */,
+				3E6E9CD6152AA00100ACC702 /* main.m */,
+				3E6E9CD8152AA00100ACC702 /* aMagnifier-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E6E9CEC152AA00100ACC702 /* aMagnifierTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E9CF2152AA00100ACC702 /* aMagnifierTests.h */,
+				3E6E9CF3152AA00100ACC702 /* aMagnifierTests.m */,
+				3E6E9CED152AA00100ACC702 /* Supporting Files */,
+			);
+			path = aMagnifierTests;
+			sourceTree = "<group>";
+		};
+		3E6E9CED152AA00100ACC702 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E9CEE152AA00100ACC702 /* aMagnifierTests-Info.plist */,
+				3E6E9CEF152AA00100ACC702 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E6E9D07152AA6CB00ACC702 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E6E9D08152AA6D400ACC702 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3E6E9D08152AA6D400ACC702 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC427B152B62CC002E4C9A /* overlay-short.png */,
+				3E6E9D1D152ABC4300ACC702 /* blue_button.png */,
+				3E6E9D1B152ABA6200ACC702 /* blue.png */,
+				3E6E9D15152AB50400ACC702 /* overlay.png */,
+				3E6E9D13152AAC1400ACC702 /* zoom_out.png */,
+				3E6E9D11152AAADE00ACC702 /* zoom_in.png */,
+				3E6E9D09152AA6E500ACC702 /* minus.png */,
+				3E6E9D0A152AA6E500ACC702 /* plus.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E6E9CC3152AA00100ACC702 /* aMagnifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6E9CF7152AA00100ACC702 /* Build configuration list for PBXNativeTarget "aMagnifier" */;
+			buildPhases = (
+				3E6E9CC0152AA00100ACC702 /* Sources */,
+				3E6E9CC1152AA00100ACC702 /* Frameworks */,
+				3E6E9CC2152AA00100ACC702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aMagnifier;
+			productName = aMagnifier;
+			productReference = 3E6E9CC4152AA00100ACC702 /* aMagnifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E6E9CE3152AA00100ACC702 /* aMagnifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6E9CFA152AA00100ACC702 /* Build configuration list for PBXNativeTarget "aMagnifierTests" */;
+			buildPhases = (
+				3E6E9CDF152AA00100ACC702 /* Sources */,
+				3E6E9CE0152AA00100ACC702 /* Frameworks */,
+				3E6E9CE1152AA00100ACC702 /* Resources */,
+				3E6E9CE2152AA00100ACC702 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E6E9CEB152AA00100ACC702 /* PBXTargetDependency */,
+			);
+			name = aMagnifierTests;
+			productName = aMagnifierTests;
+			productReference = 3E6E9CE4152AA00100ACC702 /* aMagnifierTests.octest */;
+			productType = "com.apple.product-type.bundle.ocunit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E6E9CBB152AA00100ACC702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 3E6E9CBE152AA00100ACC702 /* Build configuration list for PBXProject "aMagnifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3E6E9CB9152AA00100ACC702;
+			productRefGroup = 3E6E9CC5152AA00100ACC702 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E6E9CC3152AA00100ACC702 /* aMagnifier */,
+				3E6E9CE3152AA00100ACC702 /* aMagnifierTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E6E9CC2152AA00100ACC702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6E9CD5152AA00100ACC702 /* InfoPlist.strings in Resources */,
+				3E6E9D01152AA03300ACC702 /* MagnaViewController.xib in Resources */,
+				3E6E9D0B152AA6E500ACC702 /* minus.png in Resources */,
+				3E6E9D0C152AA6E500ACC702 /* plus.png in Resources */,
+				3E6E9D12152AAADE00ACC702 /* zoom_in.png in Resources */,
+				3E6E9D14152AAC1400ACC702 /* zoom_out.png in Resources */,
+				3E6E9D16152AB50400ACC702 /* overlay.png in Resources */,
+				3E6E9D1C152ABA6200ACC702 /* blue.png in Resources */,
+				3E6E9D1E152ABC4300ACC702 /* blue_button.png in Resources */,
+				3E7D4814152AC73100A0628C /* amag_57.png in Resources */,
+				3EBC4274152B5C0A002E4C9A /* FlipsideViewController.xib in Resources */,
+				3EBC427C152B62CC002E4C9A /* overlay-short.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6E9CE1152AA00100ACC702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6E9CF1152AA00100ACC702 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E6E9CE2152AA00100ACC702 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E6E9CC0152AA00100ACC702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6E9CD7152AA00100ACC702 /* main.m in Sources */,
+				3E6E9CDB152AA00100ACC702 /* AppDelegate.m in Sources */,
+				3E6E9CDE152AA00100ACC702 /* aMagnifier.xcdatamodeld in Sources */,
+				3E6E9D00152AA03300ACC702 /* MagnaViewController.m in Sources */,
+				3E6E9D04152AA39700ACC702 /* CaptureSessionManager.m in Sources */,
+				3EBC4278152B5C1E002E4C9A /* FlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6E9CDF152AA00100ACC702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6E9CF4152AA00100ACC702 /* aMagnifierTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E6E9CEB152AA00100ACC702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E6E9CC3152AA00100ACC702 /* aMagnifier */;
+			targetProxy = 3E6E9CEA152AA00100ACC702 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E6E9CD3152AA00100ACC702 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E6E9CD4152AA00100ACC702 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3E6E9CEF152AA00100ACC702 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E6E9CF0152AA00100ACC702 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E6E9CF5152AA00100ACC702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E6E9CF6152AA00100ACC702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E6E9CF8152AA00100ACC702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dwain T Jay";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aMagnifier/aMagnifier-Prefix.pch";
+				INFOPLIST_FILE = "aMagnifier/aMagnifier-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "10298403-712C-4E7B-A3FD-5BCCE9D5491E";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3E6E9CF9152AA00100ACC702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dwain T Jay";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aMagnifier/aMagnifier-Prefix.pch";
+				INFOPLIST_FILE = "aMagnifier/aMagnifier-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "10298403-712C-4E7B-A3FD-5BCCE9D5491E";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3E6E9CFB152AA00100ACC702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/aMagnifier.app/aMagnifier";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aMagnifier/aMagnifier-Prefix.pch";
+				INFOPLIST_FILE = "aMagnifierTests/aMagnifierTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3E6E9CFC152AA00100ACC702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/aMagnifier.app/aMagnifier";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aMagnifier/aMagnifier-Prefix.pch";
+				INFOPLIST_FILE = "aMagnifierTests/aMagnifierTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E6E9CBE152AA00100ACC702 /* Build configuration list for PBXProject "aMagnifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6E9CF5152AA00100ACC702 /* Debug */,
+				3E6E9CF6152AA00100ACC702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6E9CF7152AA00100ACC702 /* Build configuration list for PBXNativeTarget "aMagnifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6E9CF8152AA00100ACC702 /* Debug */,
+				3E6E9CF9152AA00100ACC702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6E9CFA152AA00100ACC702 /* Build configuration list for PBXNativeTarget "aMagnifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6E9CFB152AA00100ACC702 /* Debug */,
+				3E6E9CFC152AA00100ACC702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3E6E9CDC152AA00100ACC702 /* aMagnifier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E6E9CDD152AA00100ACC702 /* aMagnifier.xcdatamodel */,
+			);
+			currentVersion = 3E6E9CDD152AA00100ACC702 /* aMagnifier.xcdatamodel */;
+			path = aMagnifier.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3E6E9CBB152AA00100ACC702 /* Project object */;
+}
